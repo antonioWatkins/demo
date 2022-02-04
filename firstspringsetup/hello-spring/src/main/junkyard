@@ -1,0 +1,19 @@
+ @GetMapping("form")
+    public String helloForm() {
+        return "<html>" +
+                "<body>" +
+                "<form action = '/hello' method = 'post'>" + // submit a request to /hello
+                "<input type = 'text' name = 'name' >" +
+                "<label for = 'language'> select Language: </label>" +
+                "<select lang= 'lang id = 'language" +
+                "<option value = ' please choose an option" +
+                "<option value = ' eng'>English<option>" +
+                "<option value = ' fr'>French<option>" +
+                "<option value = ' Ger'>German<option> " +
+                "</select>"+
+
+                "<input type = 'submit' value = 'Greet Me!' >" +
+                "</form>" +
+                "</body>" +
+                "</html>";
+    }
